@@ -1,0 +1,31 @@
+import tkinter as tk
+
+ def hitung():
+ 	panjang = int(panjang_entry.get())
+ 	lebar = int(lebar_entry.get())
+
+    luas = panjang * lebar
+    keliling = 2 * (panjang +lebar)
+
+    luas_label.config(text=f"Luas Persegi Panjang : {luas}")
+    keliling_label.config(text=f"Keliling Persegi Panjang: {keliling}")
+ 
+master = tk.Tk()
+master.title("Program Persegi Panjang")
+panjang_label = tk.Label (master, text="Masukan Panjang")
+panjang_label.grid(row=0, column=0)
+panjang_entry tk. Entry (master)
+panjang_entry.grid(row=0, column=1)
+lebar_label tk.Label (master, text="Masukan Lebar")
+lebar_label.grid(row=1, column=0)
+lebar_entry tk. Entry (master)
+lebar_entry.grid(row=1, column=1)
+
+hitung_button = tk.Button(master, text="Hitung", command=hitung)
+hitung_button.grid(row=2, column=0, columnspan=2) 26
+luas_label tk. Label (master, text="Luas Persegi Panjang: ")
+luas_label.grid(row=3, column=0, columnspan=2)
+keliling label tk. Label (master, text="Keliling Persegi Panjang: ")
+keliling label.grid(row-4, column-0, columnspan-2) 31
+
+master.mainloop()
